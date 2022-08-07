@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap")
+h1,
+h2,
+h3 {
+  font-family: "Prompt", sans-serif;
+  color: #000;
+}
+body {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: .8rem;
+  font-weight: 400;
+  line-height: 1.1rem;
+  color: #1A1110;
+}
+.details .place {
+    float: left;
+    font-size: 0.75rem;
+    padding-bottom: .25rem;
+}
+p {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: .8rem;
+  font-weight: 400;
+  line-height: 1.1rem;
+  color: #1A1110;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  
+}
+a {
+  color: #1A1110;
+  text-decoration: underline;
+  
+}
+.details .location {
+    float: right;
+    font-weight: 350;
+}
+.details header {
+    color: #000;
+    font-weight: 500;
+}
+.aside{
+  /* Remove additional padding from sidebar, keeps main and sidebar even at height  */
+  padding: .1in;
+  width: 15rem;
+}
+.aside .level2 {
+  /* Remove additional padding from sidebar, keeps main and sidebar even at height  */
+  margin-top: 0in;
+}
+* {
+  /* Override default right margin for sidebar*/
+  --pagedjs-margin-right: 0.1in;
+  --pagedjs-margin-left: 0.1in;
+  --pagedjs-margin-top: 0.2in;
+  /* Remove additional padding from user agent inside sidebar*/
+  padding-inline-start: 0px;
+}
+
+:root {
+  --row-blocks-padding-top: 0.3rem;
+  --sidebar-width: 14rem; /* Shrink sidebar width  */
+  --sidebar-background-color: #F5FEFD; /* Make sidebar snow */
+  --sidebar-horizontal-padding: 0.01in; /* Reduce sidebar padding */
+  --sidebar-vertical-padding: 0.01in;
+  --decorator-border: 2px solid #bdd7e7; /* Make timeline a blue as well*/
+}
+
+[data-id="title"] h1 {
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 1;
+    padding-bottom: .5rem;
+}
+.section .level2 {
+  margin-block-start: auto;
+  margin-block-end: auto;
+}
+span.my-location {
+    font-size: .8rem;
+    font-weight: 400;
+    text-transform: none;
+    float: right;
+    padding-top: .75rem;
+}
+span.my-blurb {
+    font-size: .8rem;
+    line-height: 1.1rem;
+}
+
+[data-id="main"] {
+    font-size: .8rem;
+    padding-top: 0px;
+    padding-right: 0.1px;
+    padding-left: 0.1px;
+    padding-bottom: 0px;
+    line-height: 1.12rem;
+}
+
+.fa.fa-address-card-o:before {
+    content: "\f2bb";
+    margin-right: 5px;
+}
+.fa.fa-home:before {
+    color: #000;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+.fa.fa-envelope:before {
+    color: #000;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+.fa.fa-linkedin:before {
+    color: #000;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+.fa.fa-github:before {
+    color: #000;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+
+[data-id="main"] h2::after {
+    height: 5px;
+    position: relative;
+    top: calc(-1 * var(--row-blocks-padding-top));
+    left: calc(-1 * var(--decorator-horizontal-margin));
+    display: block;
+    border-left: var(--decorator-border);
+    z-index: 0;
+    line-height: 1.25;
+    font-size: .8rem;
+    content: ' ';
+}
+div#experience {
+    padding-top: .5rem;
+}
+[data-id="languages"] h2 {
+  padding-top: 1rem;
+  padding-bottom: 2px;
+  color: #555;
+}
+[data-id="education"] {
+  line-height: 0px;
+}
+[data-id="education"] h2 {
+  padding-top: 12px;
+  padding-bottom: 4px;
+  color: #555;
+}
+[data-id="education"] h3, h4 {
+  line-height: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+[data-id="tools"] {
+  line-height: 0px;
+}
+[data-id="tools"] h2 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: #555;
+}
+[data-id="tools"] h3, h4 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-block-start: .75em;
+  margin-block-end: .75em;
+  line-height: 0px;
+}
+[data-id="organizations"] {
+  line-height: 0px;
+}
+[data-id="organizations"] h2 {
+  padding-top: 1rem;
+  padding-bottom: 2px;
+  color: #555;
+}
+[data-id="organizations"] h3, h4 {
+  padding-top: 4px;
+  padding-bottom: 2px;
+  margin-block-start: .75em;
+  margin-block-end: .75em;
+  line-height: 0px;
+}
+li {
+    list-style-type: none;
+    line-height: 1rem;
+}
+[data-id="main"] li {
+    margin: 0 0 0.015in 0;
+}
