@@ -1,5 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap")
+:root {
+    --pagedjs-orientation: portrait;
+    --pagedjs-width: 8.5in;
+    --pagedjs-height: 11.5in;
+    --pagedjs-width-right: 8.5in;
+    --pagedjs-height-right: 11.5in;
+    --pagedjs-width-left: 8.5in;
+    --pagedjs-height-left: 11.5in;
+}
+.pagedjs_page {
+    background: linear-gradient(to left,var(--sidebar-background-color),var(--sidebar-background-color) var(--sidebar-background-width),white var(--sidebar-background-width));
+    --pagedjs-margin-top: 1in;
+    --pagedjs-margin-right: 0.5in;
+    --pagedjs-margin-left: 0.25in;
+    --pagedjs-margin-bottom: 1in;
+    --pagedjs-border-top: [object Object];
+    --pagedjs-border-right: [object Object];
+    --pagedjs-border-left: [object Object];
+    --pagedjs-border-bottom: [object Object];
+    --pagedjs-pagebox-width: 8.5in;
+    --pagedjs-pagebox-height: 11.5in;
+}
+.pagedjs_margin-bottom {
+    width: calc(var(--pagedjs-pagebox-width) - var(--pagedjs-margin-left) - var(--pagedjs-margin-right));
+    height: .5in;
+    grid-column: center;
+    grid-row: footer;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+}
+.pagedjs_margin-bottom-left-corner-holder {
+    width: var(--pagedjs-margin-left);
+    height: .5in;
+    display: flex;
+    grid-column: left;
+    grid-row: footer;
+}
+.pagedjs_margin-bottom-right-corner-holder {
+    width: var(--pagedjs-margin-right);
+    height: .5in;
+    display: flex;
+    grid-column: right;
+    grid-row: footer;
+}
 h1,
 h2,
 h3 {
@@ -48,7 +93,7 @@ a {
 }
 .aside .level2 {
   /* Remove additional padding from sidebar, keeps main and sidebar even at height  */
-  margin-top: 0in;
+  margin-top: .5in;
 }
 * {
   /* Override default right margin for sidebar*/
@@ -91,7 +136,7 @@ span.my-blurb {
 }
 
 [data-id="main"] {
-    font-size: .8rem;
+    font-size: .77rem;
     padding-top: 0px;
     padding-right: 0.1px;
     padding-left: 0.1px;
@@ -123,8 +168,14 @@ span.my-blurb {
     padding-right: 3px;
     padding-left: 3px;
 }
-
-
+[data-id="main"] h2 {
+    position: relative;
+    top: var(--row-blocks-padding-top);
+    left: calc((var(--date-block-width) + var(--decorator-horizontal-margin)));
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: #555;
+}
 [data-id="main"] h2::after {
     height: 5px;
     position: relative;

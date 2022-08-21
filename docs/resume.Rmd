@@ -89,7 +89,7 @@ Main
 
 Mark Druffel <span class="my-location"><i class="fa fa-map-marker-alt" style='padding-right:4px;'></i>Portland, OR</span> {#title}    
 --------------------------------------------------------------------------------
-<span class="my-blurb">Data science generalist with a decade of experience working at all levels of the organization. Love using exploratory data analysis & data visualization to understand & communicate business problems / solutions - ggplot2 is my happy place. Nowadays, working as the first analyst at a start-up where we're building a platform to enable pharmacists to provide value-based care.</span>
+<span class="my-blurb">Data science generalist with a decade of experience working at all levels of the organization. I love using exploratory data analysis & data visualization to understand & communicate business problems / solutions - ggplot2 is my happy place. Nowadays, working as the first analyst at a start-up where we're building a platform to enable pharmacists to provide value-based care.</span>
 
 Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
@@ -102,9 +102,9 @@ Remote
 
 2021
 
-Work in all analytics capacities including data-engineering, business intelligence, & data science.  
+Work in all analytics capacities including data-engineering, business intelligence, & data science. Also responsible for respresenting analytics in strategic decisions inlcuding architectural design. 
 
-* Develop data-models in the data-pipeline w/ pyspark & Airflow to expand the data lake & data warehouse.
+* Develop data-models in the data-pipeline w/ pyspark & Airflow to expand the data lake, data warehouse, & analytics' capabilities.
 * Develop dashboards w/ Superset & Shiny to provide decision support. 
 * Perform analysis to identify new business questions or uncover insights that inform strategic decisions.
 * Develop models to identify trends and predict outcomes.
@@ -134,11 +134,11 @@ Chicago, IL
 
 2013
 
-Managed a global team of ~10 analysts responsible for reporting & permissions management.  
+Managed a global team of analysts responsible for reporting & ops.  
 
 * Designed & implemented a product analytics process which upended the product strategy & roadmap.
 * Developed dashboards & reporting using Tableau & a homegrown tool.
-* Developed data-models to expand the data warehouse and support process / reporting requirements.
+* Developed data-models to expand the data warehouse & analytics' capabilities.
         
 ### Senior Consultant
 
