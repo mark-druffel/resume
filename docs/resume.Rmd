@@ -64,16 +64,16 @@ skills_bar()
 <i class="fa fa-wrench" style='padding-right:6px;'></i> Tools {#tools}
 --------------------------------------------------------------------------------
 #### Database / Big Data
-SQL, Apache Spark, Apache Arrow, neo4j, dbplyr, data.table
+Snowflake, Aurora, MySQL, MS SQL, Apache Spark, pyspark, sparklyr, Apache Arrow, neo4j, dbplyr, data.table
 
 #### Data Visualization / Dashboard  
-shiny, ggplot2, d3.js, Plotly, Highcharts, Apache Superset, Tableau, PowerBI
+ggplot2, shiny, observable, d3.js, Plotly, Highcharts, Apache Superset, Tableau, PowerBI
 
 #### Modeling
-tidymodels, caret, keras
+tidymodels, caret, keras, tidytext, Apache OpenNLP
 
 #### Devops  
-Git, AWS, Digital Ocean, Docker, Apache Airflow
+Git, AWS, Digital Ocean, Docker, Apache Airflow, Netlify
 
 #### Design
 InVision, Figma, Gimp, Scribis
@@ -89,7 +89,7 @@ Main
 
 Mark Druffel <span class="my-location"><i class="fa fa-map-marker-alt" style='padding-right:4px;'></i>Portland, OR</span> {#title}    
 --------------------------------------------------------------------------------
-<span class="my-blurb">Data science generalist with a decade of experience working at all levels of the organization. I love using exploratory data analysis & data visualization to understand & communicate business problems / solutions - ggplot2 is my happy place. Nowadays, working as the first analyst at a start-up where we're building a platform to enable pharmacists to provide value-based care.</span>
+<span class="my-blurb">Data science generalist with a decade of experience working at all levels of organizations. I love using data visualization to understand and communicate problems, ggplot2 is my happy place.</span>
 
 Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
@@ -102,15 +102,16 @@ Remote
 
 2021
 
-Work in all analytics capacities including data-engineering, business intelligence, & data science. Also responsible for respresenting analytics in strategic decisions inlcuding architectural design. 
+First analyst at a start-up where we’re building a platform that enables pharmacists to provide value-based care.  
 
-* Develop data-models in the data-pipeline w/ pyspark & Airflow to expand the data lake, data warehouse, & analytics' capabilities.
-* Develop dashboards w/ Superset & Shiny to provide decision support. 
-* Perform analysis to identify new business questions or uncover insights that inform strategic decisions.
-* Develop models to identify trends and predict outcomes.
-* Write pitches for new features & tools based on product analysis.
+* Grow capabilities by developing new data models with pyspark, which are managed with an Apache Airflow pipeline. 
+* Support operations by developing dashboards with Apache Superset, R Shiny, AWS Aurora, and Snowflake. 
+* Perform ad hoc analysis and predictive modeling which has led to improvements in task targeting, sales, and customer retention. 
+* Collaborate with engineers to design a scalable analytics architecture. 
+* Write pitches for new features and tools based on product analysis. 
+* Developed an internal blog for low cost, high-fidelity analysis publishing. 
 
-### Data Scientist  
+### Data & Analytics Consultant
 
 Propeller
 
@@ -119,12 +120,12 @@ Portland, OR
 2017
 
 
-Helped clients develop data strategies & execute analytics projects, & led Propeller's internal analytics team. A few example projects:  
+Developed and executed data strategies and analytics projects for clients.
 
-* Developed text analysis / NLP tools that enabled a health insurance product team to identify / understand user pain points which provided a feedback loop between the team and end-users. 
-* Designed a prototype app to enable an HR team to transition to a data-driven recruitment process to improve velocity and candidate quality. 
-* Developed & delivered an analytics workshop that helped business teams understand the analytics process to improve collaboration between analytics & business teams. 
-* Developed internal infrastructure to streamline Propeller's operations including API wrappers, a data pipeline, & automated reporting.
+* Created a feedback loop between a product team and their end-users by developing a text analysis and NLP pipeline, which automatically identified user pain points from the website and app feedback tools. 
+* Designed a prototype app that enabled an HR team to transition to a data-driven recruitment process to improve velocity and candidate quality. 
+* Developed and facilitated an analytics workshop that helped a client's business partners understand the analytics process to improve collaboration. 
+* Developed internal infrastructure to streamline Propeller's operations including API wrappers, a data pipeline, and automated reporting.
 
 ### Business Intelligence Manager
 
@@ -134,11 +135,12 @@ Chicago, IL
 
 2013
 
-Managed a global team of analysts responsible for reporting & ops.  
+Managed a global team of reporting and operations analysts.  
 
-* Designed & implemented a product analytics process which upended the product strategy & roadmap.
-* Developed dashboards & reporting using Tableau & a homegrown tool.
-* Developed data-models to expand the data warehouse & analytics' capabilities.
+* Trained new analysts by teaching SQL, Tableau, R, Python, and others to improve the teams' capabilities and support members' career goals.
+* Designed and implemented an analytics pipeline that identified processing bottlenecks and bad code, forecasted demand, etc. enabling the product team to manage tech debt.
+* Developed dashboards and reporting using Tableau and eGlue (homegrown).
+* Managed access management, data transfer, and data quality assurance.
         
 ### Senior Consultant
 
@@ -148,7 +150,7 @@ Chicago, IL
 
 2011
 
-Managed IT audits & risk assessments for clients in various industries.  
+Managed IT audits and risk assessments for clients in various industries.  
 
 ### Staff Auditor 
 
@@ -158,4 +160,10 @@ Cincinnati, OH
 
 2010
 
-Executed financial & IT audits, & risk assessments.  
+Executed financial audits, IT audits, and risk assessments.   
+
+
+<footer> 
+<p class="footer">Resume made with `r fontawesome::fa("r-project", fill = "steelblue")` & [pagedown](https://github.com/rstudio/pagedown), code available on `r fontawesome::fa("github", fill = "black")` [GitHub](https://github.com/mark-druffel/resume)<br/>[mark.druffel@gmail.com](mailto:mark.druffel@gmail.com)
+<p/>
+</footer>

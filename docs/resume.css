@@ -9,6 +9,15 @@
     --pagedjs-width-left: 8.5in;
     --pagedjs-height-left: 11.5in;
 }
+:root {
+  --row-blocks-padding-top: 0.3rem;
+  --sidebar-width: 13rem; /* Shrink sidebar width  */
+  --sidebar-background-color: #F5FEFD; /* Make sidebar snow */
+  --sidebar-horizontal-padding: 0.01in; /* Reduce sidebar padding */
+  --sidebar-vertical-padding: 0.01in;
+  --decorator-border: 2px solid #bdd7e7; /* Make timeline a blue as well*/
+  --main-width: calc(var(--content-width) - var(--sidebar-width) + .09in);
+}
 .pagedjs_page {
     background: linear-gradient(to left,var(--sidebar-background-color),var(--sidebar-background-color) var(--sidebar-background-width),white var(--sidebar-background-width));
     --pagedjs-margin-top: 1in;
@@ -21,6 +30,7 @@
     --pagedjs-border-bottom: [object Object];
     --pagedjs-pagebox-width: 8.5in;
     --pagedjs-pagebox-height: 11.5in;
+    --sidebar-background-width: calc(var(--pagedjs-margin-right) + var(--sidebar-width) - .05in);;
 }
 .pagedjs_margin-bottom {
     width: calc(var(--pagedjs-pagebox-width) - var(--pagedjs-margin-left) - var(--pagedjs-margin-right));
@@ -104,15 +114,6 @@ a {
   padding-inline-start: 0px;
 }
 
-:root {
-  --row-blocks-padding-top: 0.3rem;
-  --sidebar-width: 14rem; /* Shrink sidebar width  */
-  --sidebar-background-color: #F5FEFD; /* Make sidebar snow */
-  --sidebar-horizontal-padding: 0.01in; /* Reduce sidebar padding */
-  --sidebar-vertical-padding: 0.01in;
-  --decorator-border: 2px solid #bdd7e7; /* Make timeline a blue as well*/
-}
-
 [data-id="title"] h1 {
     font-weight: 700;
     font-size: 1.7rem;
@@ -134,9 +135,9 @@ span.my-blurb {
     font-size: .8rem;
     line-height: 1.1rem;
 }
-
 [data-id="main"] {
     font-size: .77rem;
+    margin: 0.05in 0;
     padding-top: 0px;
     padding-right: 0.1px;
     padding-left: 0.1px;
@@ -248,4 +249,13 @@ li {
 }
 [data-id="main"] li {
     margin: 0 0 0.015in 0;
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.6rem !important;
 }
