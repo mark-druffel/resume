@@ -137,7 +137,7 @@ Chicago, IL
 
 Managed a global team of reporting and operations analysts.  
 
-* Trained new analysts by teaching SQL, Tableau, R, Python, and others to improve the teams' capabilities and support members' career goals.
+* Trained new analysts by teaching SQL, Tableau, R, Python, etc. to improve the teams' capabilities and support members' career goals.
 * Designed and implemented an analytics pipeline that identified processing bottlenecks and bad code, forecasted demand, etc. enabling the product team to manage tech debt.
 * Developed dashboards and reporting using Tableau and eGlue (homegrown).
 * Managed access management, data transfer, and data quality assurance.
