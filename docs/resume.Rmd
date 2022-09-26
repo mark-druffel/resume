@@ -89,7 +89,7 @@ Main
 
 Mark Druffel <span class="my-location"><i class="fa fa-map-marker-alt" style='padding-right:4px;'></i>Portland, OR</span> {#title}    
 --------------------------------------------------------------------------------
-<span class="my-blurb">Data science generalist with a decade of experience working at all levels of organizations. I love using data visualization to understand and communicate problems, ggplot2 is my happy place.</span>
+<span class="my-blurb">Data science generalist with a decade of experience working at all levels of organizations. I love using data visualization to understand and communicate insights, ggplot2 is my happy place.</span>
 
 Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
