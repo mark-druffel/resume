@@ -75,7 +75,7 @@ body {
 }
 p {
   font-family: "Roboto Slab", sans-serif;
-  font-size: .8rem;
+  font-size: .79rem;
   font-weight: 400;
   line-height: 1.1rem;
   color: #1A1110;
@@ -258,4 +258,8 @@ li {
   width: 100%;
   text-align: center;
   font-size: 0.6rem !important;
+}
+
+.main-block:not(.concise) .details div {
+  margin: 0in 0 0in 0;
 }

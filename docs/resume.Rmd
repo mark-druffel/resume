@@ -13,10 +13,16 @@ output:
 ```{r, include=FALSE}
 knitr::opts_chunk$set(
   results='asis', 
-  echo = FALSE
+  echo = FALSE,
+  warning = F,
+  message = F
 )
 library(tidyverse)
 library(ragg)
+knitr::opts_chunk$set(dev = "ragg_png")
+library(showtext)
+sysfonts::font_add_google(name = "Roboto Slab", family = "roboto_slab")
+showtext::showtext_auto()
 ```
 Aside
 ================================================================================
@@ -44,7 +50,7 @@ skills_bar <- function(){
   tibble(
     order = c(1, 2, 3, 4 ,5 , 6, 7),
     language = c("R", "Python", "SQL", "Cypher", "JavaScript", "HTML/CSS", "Bash"),
-    skill = c(5, 3, 4.5, 2, 2.5, 3, 2.5)
+    skill = c(5, 3, 4.5, 2, 2.25, 3.5, 2.5)
   ) |>
     mutate(max = 5) |>
     ggplot(aes(x = max, y = reorder(language, -order), width = .6)) +
@@ -53,7 +59,7 @@ skills_bar <- function(){
     theme_void() +
     labs(y = "Language") +
     theme(
-      axis.text.y = element_text(size = 28, family = "Roboto Slab", face = "bold", color = "black", hjust = 1),
+      axis.text.y = element_text(size = 52, family = "roboto_slab", face = "bold", color = "black", hjust = 1),
       plot.background = element_rect(fill = "#F5FEFD", color = "#F5FEFD"),
       panel.background = element_rect(fill = "#F5FEFD", color = "#F5FEFD")
     )
@@ -120,12 +126,12 @@ Portland, OR
 2017
 
 
-Developed and executed data strategies and analytics projects for clients.
+Developed data strategies and road maps for clients, and executed analytics projects including the project management, change management, analysis, and engineering.   
 
 * Created a feedback loop between a product team and their end-users by developing a text analysis and NLP pipeline, which automatically identified user pain points from the website and app feedback tools. 
-* Designed a prototype app that enabled an HR team to transition to a data-driven recruitment process to improve velocity and candidate quality. 
+* Designed a prototype app that enabled an HR team to transition to a data-driven recruitment process, improving velocity and candidate quality. 
 * Developed and facilitated an analytics workshop that helped a client's business partners understand the analytics process to improve collaboration. 
-* Developed internal infrastructure to streamline Propeller's operations including API wrappers, a data pipeline, and automated reporting.
+* Developed internal analytics infrastructure to streamline Propeller's operations including API wrappers, a data pipeline, and automated reporting.
 
 ### Business Intelligence Manager
 
@@ -138,7 +144,7 @@ Chicago, IL
 Managed a global team of reporting and operations analysts.  
 
 * Trained new analysts by teaching SQL, Tableau, R, Python, etc. to improve the teams' capabilities and support members' career goals.
-* Designed and implemented an analytics pipeline that identified processing bottlenecks and bad code, forecasted demand, etc. enabling the product team to manage tech debt.
+* Designed and developed an analytics pipeline that identified bottlenecks, forecasted server demand, etc. to measure and manage tech debt.
 * Developed dashboards and reporting using Tableau and eGlue (homegrown).
 * Managed access management, data transfer, and data quality assurance.
         
