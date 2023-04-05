@@ -33,6 +33,7 @@ Aside
 <a href='mailto:mark.druffel@gmail.com' target='_blank'><i class="fa fa-envelope"></i></a>
 <a href='https://github.com/mark-druffel' target='_blank'><i class="fa fa-github"></i></a>
 <a href='https://www.linkedin.com/in/markdruffel/' target='_blank'><i class="fa fa-linkedin"></i></a>
+<a href='https:/stackoverflow.com/users/6213809/mark-druffel' target='_blank'><i class="fa fa-stack-overflow"></i></a>
 </center>
 
 <i class="fa fa-graduation-cap" style='padding-right:6px;'></i> Education {#education}
@@ -50,7 +51,7 @@ skills_bar <- function(){
   tibble(
     order = c(1, 2, 3, 4 ,5 , 6, 7),
     language = c("R", "Python", "SQL", "Cypher", "JavaScript", "HTML/CSS", "Bash"),
-    skill = c(5, 3, 4.5, 2, 2.25, 3.5, 2.5)
+    skill = c(5, 3.5, 5, 2, 2.25, 3.25, 2.5)
   ) |>
     mutate(max = 5) |>
     ggplot(aes(x = max, y = reorder(language, -order), width = .6)) +
@@ -70,7 +71,7 @@ skills_bar()
 <i class="fa fa-wrench" style='padding-right:6px;'></i> Tools {#tools}
 --------------------------------------------------------------------------------
 #### Database / Big Data
-Snowflake, Aurora, MySQL, MS SQL, Apache Spark, pyspark, sparklyr, Apache Arrow, neo4j, dbplyr, data.table
+Snowflake, Aurora, MySQL, MS SQL, Oracle, pyspark, sparklyr, Databricks, Apache Arrow, neo4j, dbplyr, data.table
 
 #### Data Visualization / Dashboard  
 ggplot2, shiny, observable, d3.js, Plotly, Highcharts, Apache Superset, Tableau, PowerBI
@@ -79,7 +80,7 @@ ggplot2, shiny, observable, d3.js, Plotly, Highcharts, Apache Superset, Tableau,
 tidymodels, caret, keras, tidytext, Apache OpenNLP
 
 #### Devops  
-Git, AWS, Digital Ocean, Docker, Apache Airflow, Netlify
+Git, AWS, Azure, Digital Ocean, Docker, Apache Airflow, Azure Data Factory, Netlify
 
 #### Design
 InVision, Figma, Gimp, Scribis
@@ -95,10 +96,24 @@ Main
 
 Mark Druffel <span class="my-location"><i class="fa fa-map-marker-alt" style='padding-right:4px;'></i>Portland, OR</span> {#title}    
 --------------------------------------------------------------------------------
-<span class="my-blurb">Data science generalist with a decade of experience working at all levels of organizations. I love using data visualization to understand and communicate insights, ggplot2 is my happy place.</span>
+<span class="my-blurb">Data scientist with over a decade of experience working at all levels of organizations. I love using data visualization to tell stories, ggplot2 is my happy place.
 
 Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
+
+### Lead Data Scientist
+
+84.51°
+
+Remote
+
+2022
+
+Lead data scientist on the personalization and loyalty team where we develop and manage analytics capabilities that enable the business to execute and measure marketing campaigns across Kroger's business.  
+
+* Develop and maintain data pipelines to support new modeling and dashboards
+* Develop and maintain models to enable A/B testing marketing campaigns
+* Manage stakeholders across various departments including tech, marketing, and data science
 
 ### Senior Data Analyst
 
@@ -108,14 +123,11 @@ Remote
 
 2021
 
-First analyst at a start-up where we’re building a platform that enables pharmacists to provide value-based care.  
+Founding member and first analytics hire for a seed funded start-up.  
 
-* Grow capabilities by developing new data models with pyspark, which are managed with an Apache Airflow pipeline. 
-* Support operations by developing dashboards with Apache Superset, R Shiny, AWS Aurora, and Snowflake. 
-* Perform ad hoc analysis and predictive modeling which has led to improvements in task targeting, sales, and customer retention. 
-* Collaborate with engineers to design a scalable analytics architecture. 
-* Write pitches for new features and tools based on product analysis. 
-* Developed an internal blog for low cost, high-fidelity analysis publishing. 
+* Expanded the data warehouse by developing data models in the pipeline with SQL, pyspark, and Airflow  
+* Designed and developed dashboards that were used by business operations using Apache Superset and R Shiny  
+* Led analysis projects that improved task targeting, sales, and user retention   
 
 ### Data & Analytics Consultant
 
@@ -125,13 +137,12 @@ Portland, OR
 
 2017
 
+Worked with clients to develop strategies and road maps and execute projects.
 
-Developed data strategies and road maps for clients, and executed analytics projects including the project management, change management, analysis, and engineering.   
-
-* Created a feedback loop between a product team and their end-users by developing a text analysis and NLP pipeline, which automatically identified user pain points from the website and app feedback tools. 
-* Designed a prototype app that enabled an HR team to transition to a data-driven recruitment process, improving velocity and candidate quality. 
-* Developed and facilitated an analytics workshop that helped a client's business partners understand the analytics process to improve collaboration. 
-* Developed internal analytics infrastructure to streamline Propeller's operations including API wrappers, a data pipeline, and automated reporting.
+* Created a feedback loop between a product team and their end-users by developing a text analysis and NLP pipeline, which automatically identified user pain points 
+* Designed a prototype app that enabled an HR team to transition to a data-driven recruitment process, improving velocity and candidate quality 
+* Developed and facilitated an analytics workshops
+* Developed internal analytics infrastructure to streamline Propeller's operations including API wrappers, a data pipeline, and automated reporting  
 
 ### Business Intelligence Manager
 
@@ -141,12 +152,12 @@ Chicago, IL
 
 2013
 
-Managed a global team of reporting and operations analysts.  
+Managed a global team that directly served business partners and end users.   
 
-* Trained new analysts by teaching SQL, Tableau, R, Python, etc. to improve the teams' capabilities and support members' career goals.
-* Designed and developed an analytics pipeline that identified bottlenecks, forecasted server demand, etc. to measure and manage tech debt.
-* Developed dashboards and reporting using Tableau and eGlue (homegrown).
-* Managed access management, data transfer, and data quality assurance.
+* Trained new analysts by teaching SQL, Tableau, R, Python, etc. to improve the teams' capabilities and support members' career goals
+* Designed and developed an analytics pipeline that identified bottlenecks, forecasted server demand, etc. to measure and manage tech debt
+* Developed dashboards and reporting using Tableau and eGlue (homegrown)
+* Managed tech services on behalf of the business including access management, data transfer, and data quality assurance
         
 ### Senior Consultant
 
@@ -156,7 +167,7 @@ Chicago, IL
 
 2011
 
-Managed IT audits and risk assessments for clients in various industries.  
+Managed IT audits and risk assessments for clients in various industries
 
 ### Staff Auditor 
 
@@ -166,7 +177,7 @@ Cincinnati, OH
 
 2010
 
-Executed financial audits, IT audits, and risk assessments.   
+Executed financial audits, IT audits, and risk assessments 
 
 
 <footer> 

@@ -75,9 +75,9 @@ body {
 }
 p {
   font-family: "Roboto Slab", sans-serif;
-  font-size: .79rem;
+  font-size: .8rem;
   font-weight: 400;
-  line-height: 1.1rem;
+  line-height: 1rem;
   color: #1A1110;
   margin-block-start: 0em;
   margin-block-end: 0em;
@@ -95,6 +95,9 @@ a {
 .details header {
     color: #000;
     font-weight: 500;
+}
+.details h3 {
+    padding-bottom: 0.2rem;
 }
 .aside{
   /* Remove additional padding from sidebar, keeps main and sidebar even at height  */
@@ -118,7 +121,7 @@ a {
     font-weight: 700;
     font-size: 1.7rem;
     line-height: 1;
-    padding-bottom: .5rem;
+    padding-bottom: .3rem;
 }
 .section .level2 {
   margin-block-start: auto;
@@ -136,13 +139,13 @@ span.my-blurb {
     line-height: 1.1rem;
 }
 [data-id="main"] {
-    font-size: .77rem;
+    font-size: .75rem;
     margin: 0.05in 0;
     padding-top: 0px;
     padding-right: 0.1px;
     padding-left: 0.1px;
     padding-bottom: 0px;
-    line-height: 1.12rem;
+    line-height: 1rem;
 }
 
 .fa.fa-address-card-o:before {
@@ -160,6 +163,11 @@ span.my-blurb {
     padding-left: 3px;
 }
 .fa.fa-linkedin:before {
+    color: #000;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+.fa.fa-stack-overflow:before {
     color: #000;
     padding-right: 3px;
     padding-left: 3px;
